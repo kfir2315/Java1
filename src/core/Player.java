@@ -91,9 +91,16 @@ public class Player extends Person implements Comparable<Player>{
     @Override
     public boolean firstTimeParticipant() {
         
-        return this.getpUECount() == 1;
+        return this.getpUECount() > 1;
     }
 
-    //public
+    // update euro participation
+    public void updateEuroParticipation(int newCount) {
+        if (newCount > this.pUECount) {
+            this.pUECount = newCount;
+        } else {
+            throw new IllegalArgumentException("New participation count must be greater than the current count.");
+        }
+    }
     
 }

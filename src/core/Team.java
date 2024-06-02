@@ -2,6 +2,7 @@ package core;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 import utils.Country;
 
@@ -27,6 +28,17 @@ public class Team {
         this.redCards = 0;
         this.players = new ArrayList<>();
         this.fansCount = 0;
+    }
+
+	public Team(String tNumber) {
+		this.tNumber=tNumber;
+    }
+
+	public Team(Country represents, String tName, String tNumber, int fansCount) {
+        this.represents = represents;
+		this.tName = tName;
+		this.tNumber = tNumber;
+		this.fansCount = fansCount;
     }
 
 	public String gettNumber() {
@@ -89,7 +101,7 @@ public class Team {
 		return players;
 	}
 
-	public void setPlayers(List<Player> players) {
+	public void setPlayers(ArrayList<Player> players) {
 		this.players = players;
 	}
 
@@ -108,8 +120,28 @@ public class Team {
 				+ redCards + ", players=" + players + ", fansCount=" + fansCount + "]";
 	}
     
+	public void addPlayer(Player player) {
+        players.add(player);
+    }
+
+    public void removePlayer(Player player) throws PlayerNotFoundE {
+        if (!players.remove(player)) {
+            throw new PlayerNotFoundE("Player not found: " + player.getpId());
+        }
+    }
 	
-	
+	@Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Team team = (Team) o;
+        return Objects.equals(tNumber, team.tNumber) && Objects.equals(tName, team.tName);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(tNumber, tName);
+    }
     
 
 }
