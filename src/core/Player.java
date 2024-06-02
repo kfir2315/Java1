@@ -2,7 +2,6 @@ package core;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-
 import utils.Country;
 import utils.Role;
 
@@ -10,18 +9,16 @@ public class Player extends Person implements Comparable<Player>{
     private int pNum;
     private Role[] skills;
     private int fansCount;
+    private int pUECount;
     
-    public Player(){
-        
-    }
-
+    
     public Player(String pId, String pFullName, int age, Country nation, int pNum, Role[] skills, int fansCount) {
         super(pId, pFullName, age, nation);
         this.pNum = pNum;
         this.skills = skills;
         this.fansCount = fansCount;
     }
-    
+        
     public int getpNum() {
         return pNum;
     }
@@ -44,6 +41,14 @@ public class Player extends Person implements Comparable<Player>{
 
     public void setFansCount(int fansCount) {
         this.fansCount = fansCount;
+    }
+
+    public int getpUECount(int pUECount){
+        return pUECount;
+    }
+
+    public void setpUECount(int pUECount){
+        this.pUECount = pUECount;
     }
     
     @Override
@@ -76,15 +81,16 @@ public class Player extends Person implements Comparable<Player>{
         return pNum;
     }
     
- // Check how many times the player has participated in the Euro
+    // Check how many times the player has participated in the Euro
     public int euroParticipationCount() {
-        
+       
         return this.getpUECount();
     }
     
+    // Check if the player is participating for the first time
     @Override
     public boolean firstTimeParticipant() {
-        // Check if the player is participating for the first time
+        
         return this.getpUECount() == 1;
     }
     

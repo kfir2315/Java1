@@ -14,7 +14,7 @@ public class Team {
     private short goalsAgainst;
     private short yellowCards;
     private short redCards;
-    private List<Player> players;
+    private ArrayList<Player> players;
     private int fansCount;
 
     public Team(String tNumber, String tName, Country represents) {

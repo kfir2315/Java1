@@ -2,8 +2,8 @@ package core;
 
 import java.util.Date;
 
-public class Match {
-	
+public class Match implements Comparable<Match> {
+
 	private String mId;
     private Date mDate;
     private Stadium tookPlace;
@@ -44,13 +44,12 @@ public class Match {
     }
 
     public void setTookPlace(Stadium tookPlace) {
-        this.tookPlace = tookPlace;
+        this.tookPlace = Stadium.getStadiumByName(tookPlace);
     }
 
     public void setTotalTickets(long totalTickets) {
         this.totalTickets = totalTickets;
     }
-
 
 	@Override
 	public String toString() {
@@ -58,5 +57,11 @@ public class Match {
 				+ "]";
 	}
 
-    
+    @Override
+    public int compareTo(Match other) {
+        // Implement sorting by mDate
+        return this.getMDate().compareTo(other.getMDate());
+    }
+
+      
 }
