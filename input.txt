@@ -1,0 +1,115 @@
+// addTeam tId, tName, represents, fansCount
+addTeam t001 team1 POLAND 25000
+// failed already added
+addTeam t001 team1 POLAND 25000
+addTeam t002 team2 GREECE 26500
+addTeam t003 team3 RUSSIA 32100
+addTeam t004 team4 CZECHREPUBLIC 54100
+
+addTeam t005 team5 NETHERLANDS 35000
+addTeam t006 team6 DENMARK 27450
+addTeam t007 team7 GERMANY 50040
+addTeam t008 team8 PORTUGAL 48700
+
+addTeam t009 team9 SPAIN 25400
+addTeam t010 team10 ITALY 34200
+addTeam t011 team11 IRELAND 47010
+addTeam t012 team12 CROATIA 14520
+
+addTeam t013 team13 UKRAINE 14588
+addTeam t014 team14 SWEDEN 25000
+addTeam t015 team15 FRANCE 64000
+addTeam t016 team16 ENGLAND 63001
+
+// ===============================================================================
+// addMatch matchID, date, stadium, soldTickets
+addMatch m001 8/6/2012 NationalStadium 55010
+addMatch m001 8/6/2012 NationalStadium 55010
+addMatch m002 8/6/2012 MunicipalStadium 35000
+addMatch m003 9/6/2012 MetalistStadium 36050
+addMatch m004 9/6/2012 ArenaLviv 30090
+addMatch m005 10/6/2012 ArenaLviv 30122
+addMatch m006 10/6/2012 PGE_Arena 34000
+addMatch m007 11/6/2012 OlympicStadium 53040
+addMatch m008 11/6/2012 DonbassArena 41100
+
+addMatch m009 12/6/2012 NationalStadium 50070
+addMatch m010 12/6/2012 MunicipalStadium 40000
+addMatch m011 13/6/2012 MetalistStadium 35000
+addMatch m012 13/6/2012 ArenaLviv 29808
+
+addMatch m013 14/6/2012 PGE_Arena 38000
+addMatch m014 14/6/2012 MunicipalRStadium 39550
+addMatch m015 15/6/2012 OlympicStadium 60640
+addMatch m016 15/6/2012 DonbassArena 46440
+
+addMatch m017 16/6/2012 NationalStadium 51030
+addMatch m018 16/6/2012 MunicipalStadium 39858
+addMatch m019 17/6/2012 MetalistStadium 35651
+addMatch m020 17/6/2012 ArenaLviv 31000
+
+addMatch m021 18/6/2012 PGE_Arena 37650
+addMatch m022 18/6/2012 MunicipalRStadium 37342
+addMatch m023 19/6/2012 OlympicStadium 62214
+addMatch m024 19/6/2012 DonbassArena 47320
+
+addMatch m025 21/6/2012 NationalStadium 52322
+addMatch m026 22/6/2012 PGE_Arena 37888
+addMatch m027 23/6/2012 DonbassArena 43210
+addMatch m028 24/6/2012 OlympicStadium 61421
+
+addMatch m029 27/6/2012 DonbassArena 46200
+addMatch m030 28/6/2012 NationalStadium 52000
+addMatch m031 1/7/2012 OlympicStadium 63214
+// ===============================================================================
+// addPlayer pId, pFullName, age, nation, pNum, Role[], fansCount
+addPlayer pHR01 Stipe Pletikosa 33 CROATIA 01 GK UN 2500
+addPlayer pHR01 Stipe Pletikosa 33 CROATIA 01 GK UN 2500
+addPlayer pHR02 Danijel Pranjic 30 CROATIA 06 RB DT 2500
+addPlayer pHR03 Ivan Strinic 25 CROATIA 02 DT DE 3800
+addPlayer pHR04 Josip Simunic 34 CROATIA 03 DT UN 2500
+addPlayer pHR05 Jurica Buljat 25 CROATIA 04 DT DE 3100
+addPlayer pHR06 Ognjen Vukojevic 28 CROATIA 08 RB DT 4500
+addPlayer pHR07 Luka Modric 26 CROATIA 10 RB CB 4300
+addPlayer pHR08 Milan Badelj 24 CROATIA 14 RB DT 5800
+addPlayer pHR09 Nikica Jelavic 26 CROATIA 09 WR DT 6960
+addPlayer pHR10 Mario Mandzukic 26 CROATIA 17 WR DE 6500
+addPlayer pHR11 Eduardo Eduardo 29 CROATIA 22 WR UN 7100
+
+addPlayer pCZ01 Petr Cech 30 CZECHREPUBLIC 01 GK UN 2600
+addPlayer pCZ02 Jan Lastuvka 30 CZECHREPUBLIC 16 RB DT 3240
+addPlayer pCZ03 Michal Kadlec 27 CZECHREPUBLIC 03 DT DE 5400
+addPlayer pCZ04 Marek Suchy 24 CZECHREPUBLIC 22 DT UN 1400
+addPlayer pCZ05 Roman Hubnik 28 CZECHREPUBLIC 05 DT DE 3500
+addPlayer pCZ06 Tomas Sivok 28 CZECHREPUBLIC 06 RB DT 6800
+addPlayer pCZ07 Vaclav Pilar 23 CZECHREPUBLIC 14 RB CB 2545
+addPlayer pCZ08 Tomas Hubschman 30 CZECHREPUBLIC 17 WR DT 2515
+addPlayer pCZ09 Tomas Necid 22 CZECHREPUBLIC 07 WR DE 2585
+addPlayer pCZ10 Milan Baros 30 CZECHREPUBLIC 15 WR UN 5500
+addPlayer pCZ11 Tomas Pekhart 23 CZECHREPUBLIC 20 WR UN 6520
+
+addPlayer pUK01 Maxym Koval 19 UKRAINE 01 GK UN 1598
+addPlayer pUK02 Yevhen Selin 24 UKRAINE 02 RB DT 5478
+addPlayer pUK03 Yevhen Khacheridi 24 UKRAINE 03 DT UN 5654
+addPlayer pUK04 Yaroslav Rakitskiy 22 UKRAINE 20 UN DT 2545
+addPlayer pUK05 Bohdan Butko 21 UKRAINE 21 DT UN 5463
+addPlayer pUK06 Anatoliy Tymoshchuk 33 UKRAINE 04 RB DT 1500
+addPlayer pUK07 Denys Garmash 22 UKRAINE 06 RB UN 2544
+addPlayer pUK08 Andriy Yarmolenko 22 UKRAINE 11 WR DT 3225
+addPlayer pUK09 Andriy Voronin 33 UKRAINE 10 WR DE 4222
+addPlayer pUK10 Andriy Shevchenko 35 UKRAINE 07 WR DT 6595
+addPlayer pUK11 Marko Devi 28 UKRAINE 22 WR UN 5587
+
+addPlayer pPO01 Wojciech Szczęsny 22 POLAND 01 GK UN 1589
+addPlayer pPO02 Sebastian Boenisch 25 POLAND 02 RB UN 2566
+addPlayer pPO03 Grzegorz Wojtkowiak 28 POLAND 03 DT LB 3100
+addPlayer pPO04 Marcin Kaminski 20 POLAND 04 DT UN 2956
+addPlayer pPO05 Damien Perquis 28 POLAND 15 RB DT 6600
+addPlayer pPO06 Eugen Polanski 26 POLAND 07 RB UN 5500
+addPlayer pPO07 Ludovic Obraniak 27 POLAND 10 WR DE 5455
+addPlayer pPO08 Rafal Murawski 30 POLAND 11 WR UN 3600
+addPlayer pPO09 Pawel Brożek 29 POLAND 23 WR LT 5688
+addPlayer pPO10 Artur Sobiech 22 POLAND 17 RT WR 4236
+addPlayer pPO11 Robert Lewandowski 23 POLAND 09 WR RT 6250
+
+addPlayer pFR01 Hugo Lloris 25 FRANCE 01 GK UN 356

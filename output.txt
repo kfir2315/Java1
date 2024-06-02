@@ -1,0 +1,188 @@
+addTeam returns:
+	Successfully added team t001,POLAND to jEuroTournament
+addTeam returns:
+	Successfully added team t001,POLAND to jEuroTournament
+addTeam returns:
+	Successfully added team t002,GREECE to jEuroTournament
+addTeam returns:
+	Successfully added team t003,RUSSIA to jEuroTournament
+addTeam returns:
+	Successfully added team t004,CZECHREPUBLIC to jEuroTournament
+addTeam returns:
+	Successfully added team t005,NETHERLANDS to jEuroTournament
+addTeam returns:
+	Successfully added team t006,DENMARK to jEuroTournament
+addTeam returns:
+	Successfully added team t007,GERMANY to jEuroTournament
+addTeam returns:
+	Successfully added team t008,PORTUGAL to jEuroTournament
+addTeam returns:
+	Successfully added team t009,SPAIN to jEuroTournament
+addTeam returns:
+	Successfully added team t010,ITALY to jEuroTournament
+addTeam returns:
+	Successfully added team t011,IRELAND to jEuroTournament
+addTeam returns:
+	Successfully added team t012,CROATIA to jEuroTournament
+addTeam returns:
+	Successfully added team t013,UKRAINE to jEuroTournament
+addTeam returns:
+	Successfully added team t014,SWEDEN to jEuroTournament
+addTeam returns:
+	Successfully added team t015,FRANCE to jEuroTournament
+addTeam returns:
+	Successfully added team t016,ENGLAND to jEuroTournament
+addMatch returns:
+	Successfully added match with identifier: m001 Fri Jun 08 00:00:00 IDT 2012 to jEuroTournament
+addMatch returns:
+	Failed to add new match m001 to jEuroTournament
+addMatch returns:
+	Successfully added match with identifier: m002 Fri Jun 08 00:00:00 IDT 2012 to jEuroTournament
+addMatch returns:
+	Successfully added match with identifier: m003 Sat Jun 09 00:00:00 IDT 2012 to jEuroTournament
+addMatch returns:
+	Successfully added match with identifier: m004 Sat Jun 09 00:00:00 IDT 2012 to jEuroTournament
+addMatch returns:
+	Successfully added match with identifier: m005 Sun Jun 10 00:00:00 IDT 2012 to jEuroTournament
+addMatch returns:
+	Successfully added match with identifier: m006 Sun Jun 10 00:00:00 IDT 2012 to jEuroTournament
+addMatch returns:
+	Successfully added match with identifier: m007 Mon Jun 11 00:00:00 IDT 2012 to jEuroTournament
+addMatch returns:
+	Successfully added match with identifier: m008 Mon Jun 11 00:00:00 IDT 2012 to jEuroTournament
+addMatch returns:
+	Successfully added match with identifier: m009 Tue Jun 12 00:00:00 IDT 2012 to jEuroTournament
+addMatch returns:
+	Successfully added match with identifier: m010 Tue Jun 12 00:00:00 IDT 2012 to jEuroTournament
+addMatch returns:
+	Successfully added match with identifier: m011 Wed Jun 13 00:00:00 IDT 2012 to jEuroTournament
+addMatch returns:
+	Successfully added match with identifier: m012 Wed Jun 13 00:00:00 IDT 2012 to jEuroTournament
+addMatch returns:
+	Successfully added match with identifier: m013 Thu Jun 14 00:00:00 IDT 2012 to jEuroTournament
+addMatch returns:
+	Successfully added match with identifier: m014 Thu Jun 14 00:00:00 IDT 2012 to jEuroTournament
+addMatch returns:
+	Successfully added match with identifier: m015 Fri Jun 15 00:00:00 IDT 2012 to jEuroTournament
+addMatch returns:
+	Successfully added match with identifier: m016 Fri Jun 15 00:00:00 IDT 2012 to jEuroTournament
+addMatch returns:
+	Successfully added match with identifier: m017 Sat Jun 16 00:00:00 IDT 2012 to jEuroTournament
+addMatch returns:
+	Successfully added match with identifier: m018 Sat Jun 16 00:00:00 IDT 2012 to jEuroTournament
+addMatch returns:
+	Successfully added match with identifier: m019 Sun Jun 17 00:00:00 IDT 2012 to jEuroTournament
+addMatch returns:
+	Successfully added match with identifier: m020 Sun Jun 17 00:00:00 IDT 2012 to jEuroTournament
+addMatch returns:
+	Successfully added match with identifier: m021 Mon Jun 18 00:00:00 IDT 2012 to jEuroTournament
+addMatch returns:
+	Successfully added match with identifier: m022 Mon Jun 18 00:00:00 IDT 2012 to jEuroTournament
+addMatch returns:
+	Successfully added match with identifier: m023 Tue Jun 19 00:00:00 IDT 2012 to jEuroTournament
+addMatch returns:
+	Successfully added match with identifier: m024 Tue Jun 19 00:00:00 IDT 2012 to jEuroTournament
+addMatch returns:
+	Successfully added match with identifier: m025 Thu Jun 21 00:00:00 IDT 2012 to jEuroTournament
+addMatch returns:
+	Successfully added match with identifier: m026 Fri Jun 22 00:00:00 IDT 2012 to jEuroTournament
+addMatch returns:
+	Successfully added match with identifier: m027 Sat Jun 23 00:00:00 IDT 2012 to jEuroTournament
+addMatch returns:
+	Successfully added match with identifier: m028 Sun Jun 24 00:00:00 IDT 2012 to jEuroTournament
+addMatch returns:
+	Successfully added match with identifier: m029 Wed Jun 27 00:00:00 IDT 2012 to jEuroTournament
+addMatch returns:
+	Successfully added match with identifier: m030 Thu Jun 28 00:00:00 IDT 2012 to jEuroTournament
+addMatch returns:
+	Successfully added match with identifier: m031 Sun Jul 01 00:00:00 IDT 2012 to jEuroTournament
+addPlayer returns:
+	Successfully added Player pHR01 , 1 to jEuroTournament
+addPlayer returns:
+	Failed adding Player pHR01 , 1 to jEuroTournament
+addPlayer returns:
+	Successfully added Player pHR02 , 6 to jEuroTournament
+addPlayer returns:
+	Successfully added Player pHR03 , 2 to jEuroTournament
+addPlayer returns:
+	Successfully added Player pHR04 , 3 to jEuroTournament
+addPlayer returns:
+	Successfully added Player pHR05 , 4 to jEuroTournament
+addPlayer returns:
+	Successfully added Player pHR06 , 8 to jEuroTournament
+addPlayer returns:
+	Successfully added Player pHR07 , 10 to jEuroTournament
+addPlayer returns:
+	Successfully added Player pHR08 , 14 to jEuroTournament
+addPlayer returns:
+	Successfully added Player pHR09 , 9 to jEuroTournament
+addPlayer returns:
+	Successfully added Player pHR10 , 17 to jEuroTournament
+addPlayer returns:
+	Successfully added Player pHR11 , 22 to jEuroTournament
+addPlayer returns:
+	Successfully added Player pCZ01 , 1 to jEuroTournament
+addPlayer returns:
+	Successfully added Player pCZ02 , 16 to jEuroTournament
+addPlayer returns:
+	Successfully added Player pCZ03 , 3 to jEuroTournament
+addPlayer returns:
+	Successfully added Player pCZ04 , 22 to jEuroTournament
+addPlayer returns:
+	Successfully added Player pCZ05 , 5 to jEuroTournament
+addPlayer returns:
+	Successfully added Player pCZ06 , 6 to jEuroTournament
+addPlayer returns:
+	Successfully added Player pCZ07 , 14 to jEuroTournament
+addPlayer returns:
+	Successfully added Player pCZ08 , 17 to jEuroTournament
+addPlayer returns:
+	Successfully added Player pCZ09 , 7 to jEuroTournament
+addPlayer returns:
+	Successfully added Player pCZ10 , 15 to jEuroTournament
+addPlayer returns:
+	Successfully added Player pCZ11 , 20 to jEuroTournament
+addPlayer returns:
+	Successfully added Player pUK01 , 1 to jEuroTournament
+addPlayer returns:
+	Successfully added Player pUK02 , 2 to jEuroTournament
+addPlayer returns:
+	Successfully added Player pUK03 , 3 to jEuroTournament
+addPlayer returns:
+	Successfully added Player pUK04 , 20 to jEuroTournament
+addPlayer returns:
+	Successfully added Player pUK05 , 21 to jEuroTournament
+addPlayer returns:
+	Successfully added Player pUK06 , 4 to jEuroTournament
+addPlayer returns:
+	Successfully added Player pUK07 , 6 to jEuroTournament
+addPlayer returns:
+	Successfully added Player pUK08 , 11 to jEuroTournament
+addPlayer returns:
+	Successfully added Player pUK09 , 10 to jEuroTournament
+addPlayer returns:
+	Successfully added Player pUK10 , 7 to jEuroTournament
+addPlayer returns:
+	Successfully added Player pUK11 , 22 to jEuroTournament
+addPlayer returns:
+	Successfully added Player pPO01 , 1 to jEuroTournament
+addPlayer returns:
+	Successfully added Player pPO02 , 2 to jEuroTournament
+addPlayer returns:
+	Successfully added Player pPO03 , 3 to jEuroTournament
+addPlayer returns:
+	Successfully added Player pPO04 , 4 to jEuroTournament
+addPlayer returns:
+	Successfully added Player pPO05 , 15 to jEuroTournament
+addPlayer returns:
+	Successfully added Player pPO06 , 7 to jEuroTournament
+addPlayer returns:
+	Successfully added Player pPO07 , 10 to jEuroTournament
+addPlayer returns:
+	Successfully added Player pPO08 , 11 to jEuroTournament
+addPlayer returns:
+	Successfully added Player pPO09 , 23 to jEuroTournament
+addPlayer returns: invalid input pId , pPO10
+addPlayer returns: invalid input pId , pPO11
+addPlayer returns:
+	Successfully added Player pFR01 , 1 to jEuroTournament
