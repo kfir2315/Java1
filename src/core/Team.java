@@ -61,9 +61,9 @@ public class Team {
 		return represents;
 	}
 
-	public void setRepresents(Country represents) {
-		this.represents = represents;
-	}
+	public void setRepresents(String countryName) {
+        this.represents = Country.getCountryByName(countryName);
+    }
 
 	public short getGoalsScored() {
 		return goalsScored;

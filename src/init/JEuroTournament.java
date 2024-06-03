@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+
 import core.Fund;
 import core.Match;
 import core.MatchResult;
@@ -141,7 +142,11 @@ public class JEuroTournament {
      * this method needs to run on the ArrayList and save all the Players objects
      */
     public void savePlayerToFile() {
-       
+        try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("player.dat"))) {
+            oos.writeObject(players);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     /**
@@ -149,6 +154,12 @@ public class JEuroTournament {
      */
     @SuppressWarnings("unchecked")
     public void loadPlayersFromFile() {
+
+        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream("player.dat"))) {
+            players = (ArrayList<Player>) ois.readObject();
+        } catch (IOException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
      
     }
 
@@ -160,6 +171,15 @@ public class JEuroTournament {
      */
     public static List<Player> getPlayersAboveAge(List<Player> players, int age) {
       
-        return null;
+        List<Player> result = new ArrayList<>();
+        
+        for (Player player : players) {
+            if (player.getAge() > age && player.euroParticipationCount() == 0) {
+                result.add(player);
+            }
+        }
+        return result;
     }
+
+
 }

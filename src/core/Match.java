@@ -17,6 +17,13 @@ public class Match implements Comparable<Match> {
         this.totalTickets = totalTickets;
     }
     
+    // New constructor
+    public Match(long totalTickets, String stadium, Date date, String mId) {
+        this.mId = mId;
+        this.mDate = new Date(date.getTime());
+        this.tookPlace = Stadium.getStadiumByName(stadium);
+        this.totalTickets = totalTickets;
+    }
     
     public String getMId() {
         return mId;
@@ -43,7 +50,7 @@ public class Match implements Comparable<Match> {
         this.mDate = mDate;
     }
 
-    public void setTookPlace(Stadium tookPlace) {
+    public void setTookPlace(String tookPlace) {
         this.tookPlace = Stadium.getStadiumByName(tookPlace);
     }
 
@@ -59,9 +66,11 @@ public class Match implements Comparable<Match> {
 
     @Override
     public int compareTo(Match other) {
-        // Implement sorting by mDate
+       
         return this.getMDate().compareTo(other.getMDate());
     }
 
+
+    
       
 }

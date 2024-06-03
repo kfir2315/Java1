@@ -15,7 +15,9 @@ public class MatchResult {
     private short tBRedCards;
 
     public MatchResult(Team teamA, Team teamB, Match match, int totalTime, boolean penaltyEnd, int tAgoals, int tBgoals,
-                       short tAYellowCards, short tBYellowCards, short tARedCards, short tBRedCards) {
+                       short tAYellowCards, short tBYellowCards, short tARedCards, short tBRedCards) throws LogInMatchException
+					   if (teamA.getPlayers().isEmpty() || teamB.getPlayers().isEmpty()) {
+						throw new LogInMatchException("Both teams must have players."); {
         this.teamA = teamA;
         this.teamB = teamB;
         this.match = match;
