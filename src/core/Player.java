@@ -12,11 +12,15 @@ public class Player extends Person implements Comparable<Player>{
     private int pUECount;
     
     
-    public Player(String pId, String pFullName, int age, Country nation, int pNum, Role[] skills, int fansCount) {
+    public Player(String pId, String pFullName, int age, Country nation, int pNum, Role skill, int fansCount) {
         super(pId, pFullName, age, nation);
         this.pNum = pNum;
         this.skills = skills;
         this.fansCount = fansCount;
+    }
+
+    public Player() {
+        this("kfir", "maziar", 39, Country.CROATIA, 23,  Role.DE, 2000);
     }
         
     public int getpNum() {
