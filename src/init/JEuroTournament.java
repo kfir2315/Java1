@@ -77,21 +77,20 @@ public class JEuroTournament {
     /**
      * the method creates and add new team to the system
      * IFF the team does not exist.
-     * @param tId
+     * @param tNumber
      * @param tName
      * @param represents
      * @param fansCount
      * @param finalStage
      * @return if manage to add
      */
-    public boolean addTeam(String tId, String tName, String represents,
-                           int fansCount) {
-        Team teamToAdd = new Team(tId);
-        if (tId != null && tName != null
+    public boolean addTeam(Country represents, String tName, String tNumber, int fansCount) {
+        Team teamToAdd = new Team(tNumber);
+        if (tNumber != null && tName != null
                 && represents != null) {
             // checking if the team exist
             if (!teams.contains(teamToAdd)) {
-                teamToAdd = new Team(tId, tName, represents, fansCount);
+                teamToAdd = new Team(represents, tName, tNumber, fansCount);
                 teams.add(teamToAdd);
                 return true;
             }
@@ -106,7 +105,7 @@ public class JEuroTournament {
      * @param stadium
      * @return true if managed to add the match
      */
-    public boolean addMatch(String matchID, Date date, String stadium, long totalTickets) {
+    public boolean addMatch(String matchID, Date date, Stadium stadium, int totalTickets) {
 
         if (matchID != null && date != null
                 && stadium != null) {
@@ -124,12 +123,13 @@ public class JEuroTournament {
     /**
      * receive a person and without knowing its exact type
      * the method adds the Person to the system data base 
-     * IFF the person does not exist 
+     * If the person does not exist 
      * @param person
      * @return true if successfully added
      */
     public boolean addPlayer(Player player) {
         if (!players.contains(player)) {
+            addPlayer(player);
             return players.add(player);
         }
         return false;

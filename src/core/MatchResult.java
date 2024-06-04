@@ -13,24 +13,25 @@ public class MatchResult {
     private short tBYellowCards;
     private short tARedCards;
     private short tBRedCards;
-
-    public MatchResult(Team teamA, Team teamB, Match match, int totalTime, boolean penaltyEnd, int tAgoals, int tBgoals,
-                       short tAYellowCards, short tBYellowCards, short tARedCards, short tBRedCards) throws LogInMatchException
-					   if (teamA.getPlayers().isEmpty() || teamB.getPlayers().isEmpty()) {
-						throw new LogInMatchException("Both teams must have players."); {
-        this.teamA = teamA;
-        this.teamB = teamB;
-        this.match = match;
-        this.totalTime = totalTime;
-        this.penaltyEnd = penaltyEnd;
-        this.tAgoals = tAgoals;
-        this.tBgoals = tBgoals;
-        this.tAYellowCards = tAYellowCards;
-        this.tBYellowCards = tBYellowCards;
-        this.tARedCards = tARedCards;
-        this.tBRedCards = tBRedCards;
-    }
-
+	
+	public MatchResult(Team teamA, Team teamB, Match match, int totalTime, boolean penaltyEnd, int tAgoals, int tBgoals,
+						   short tAYellowCards, short tBYellowCards, short tARedCards, short tBRedCards) throws LogInMatchException {
+			if (teamA.getPlayers().isEmpty() || teamB.getPlayers().isEmpty()) {
+				throw new LogInMatchException("Both teams must have players.");
+			}
+			this.teamA = teamA;
+			this.teamB = teamB;
+			this.match = match;
+			this.totalTime = totalTime;
+			this.penaltyEnd = penaltyEnd;
+			this.tAgoals = tAgoals;
+			this.tBgoals = tBgoals;
+			this.tAYellowCards = tAYellowCards;
+			this.tBYellowCards = tBYellowCards;
+			this.tARedCards = tARedCards;
+			this.tBRedCards = tBRedCards;
+		}
+	
 	public Team getTeamA() {
 		return teamA;
 	}

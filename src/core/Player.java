@@ -34,7 +34,7 @@ public class Player extends Person implements Comparable<Player>{
     public Role[] getSkills() {
         return skills;
     }
-
+    
     public void setSkills(Role[] skills) {
         this.skills = skills;
     }

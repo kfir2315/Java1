@@ -15,7 +15,7 @@ import core.MatchResult;
 import core.Player;
 import core.Sponsor;
 import core.Team;
-
+import utils.Country;
 import utils.MyFileLogWriter;
 import utils.Role;
 
@@ -83,8 +83,15 @@ public class MainClass {
 
                 String tId = tokens[1];
                 String tName = tokens[2];
-                String represents = tokens[3];
+                Country represents = null;
                 int fansCount = 0;
+
+                try {
+                    represents = Country.valueOf(tokens[3].toUpperCase()); // Convert string to Country enum
+                } catch (IllegalArgumentException e) {
+                    System.out.println("Invalid country for addTeam: " + tokens[3]);
+                    continue; // Skip this command as the country is invalid
+                }
 
                 try {
                     fansCount = Integer.parseInt(tokens[4]);
@@ -94,7 +101,7 @@ public class MainClass {
 
                 System.out.println("addTeam: tId=" + tId + ", tName=" + tName + ", represents=" + represents + ", fansCount=" + fansCount);
 
-                isUpdated = jEuroTournament.addTeam(tId, tName, represents, fansCount);
+                isUpdated = jEuroTournament.addTeam(represents, tName, tId, fansCount);
 
                 MyFileLogWriter.writeToFileInSeparateLine("addTeam returns:");
 
@@ -205,7 +212,7 @@ public class MainClass {
         // Get players above a certain age (e.g., 25)
         List<Player> playersAboveAge = JEuroTournament.getPlayersAboveAge(jEuroTournament.getPlayers(), 25);
         for (Player player : playersAboveAge) {
-            System.out.println("Player above age 25: " + player.getFullName() + ", Age: " + player.getAge());
+            System.out.println("Player above age 25: " + player.getpFullName() + ", Age: " + player.getAge());
         }
         MyFileLogWriter.saveLogFile(); // save the output file
         input.close(); // close connection to input file

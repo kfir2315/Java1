@@ -30,7 +30,7 @@ public enum Country {
 		return acronym;
 	}
 	
-	public static Country getCounrtyByName(String country){
+	public static Country getCountryByName(String country){
 		
 		for(Country c :values()){
 			if(c.toString().equals((country)))
