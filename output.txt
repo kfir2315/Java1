@@ -33,69 +33,69 @@ addTeam returns:
 addTeam returns:
 	Successfully added team t016,ENGLAND to jEuroTournament
 addMatch returns:
-	Successfully added match with identifier: m001 Fri Jun 08 00:00:00 IDT 2012 to jEuroTournament
+	Failed to add new match m001 to jEuroTournament
 addMatch returns:
 	Failed to add new match m001 to jEuroTournament
 addMatch returns:
-	Successfully added match with identifier: m002 Fri Jun 08 00:00:00 IDT 2012 to jEuroTournament
+	Failed to add new match m002 to jEuroTournament
 addMatch returns:
-	Successfully added match with identifier: m003 Sat Jun 09 00:00:00 IDT 2012 to jEuroTournament
+	Failed to add new match m003 to jEuroTournament
 addMatch returns:
-	Successfully added match with identifier: m004 Sat Jun 09 00:00:00 IDT 2012 to jEuroTournament
+	Failed to add new match m004 to jEuroTournament
 addMatch returns:
-	Successfully added match with identifier: m005 Sun Jun 10 00:00:00 IDT 2012 to jEuroTournament
+	Failed to add new match m005 to jEuroTournament
 addMatch returns:
-	Successfully added match with identifier: m006 Sun Jun 10 00:00:00 IDT 2012 to jEuroTournament
+	Failed to add new match m006 to jEuroTournament
 addMatch returns:
-	Successfully added match with identifier: m007 Mon Jun 11 00:00:00 IDT 2012 to jEuroTournament
+	Failed to add new match m007 to jEuroTournament
 addMatch returns:
-	Successfully added match with identifier: m008 Mon Jun 11 00:00:00 IDT 2012 to jEuroTournament
+	Failed to add new match m008 to jEuroTournament
 addMatch returns:
-	Successfully added match with identifier: m009 Tue Jun 12 00:00:00 IDT 2012 to jEuroTournament
+	Failed to add new match m009 to jEuroTournament
 addMatch returns:
-	Successfully added match with identifier: m010 Tue Jun 12 00:00:00 IDT 2012 to jEuroTournament
+	Failed to add new match m010 to jEuroTournament
 addMatch returns:
-	Successfully added match with identifier: m011 Wed Jun 13 00:00:00 IDT 2012 to jEuroTournament
+	Failed to add new match m011 to jEuroTournament
 addMatch returns:
-	Successfully added match with identifier: m012 Wed Jun 13 00:00:00 IDT 2012 to jEuroTournament
+	Failed to add new match m012 to jEuroTournament
 addMatch returns:
-	Successfully added match with identifier: m013 Thu Jun 14 00:00:00 IDT 2012 to jEuroTournament
+	Failed to add new match m013 to jEuroTournament
 addMatch returns:
-	Successfully added match with identifier: m014 Thu Jun 14 00:00:00 IDT 2012 to jEuroTournament
+	Failed to add new match m014 to jEuroTournament
 addMatch returns:
-	Successfully added match with identifier: m015 Fri Jun 15 00:00:00 IDT 2012 to jEuroTournament
+	Failed to add new match m015 to jEuroTournament
 addMatch returns:
-	Successfully added match with identifier: m016 Fri Jun 15 00:00:00 IDT 2012 to jEuroTournament
+	Failed to add new match m016 to jEuroTournament
 addMatch returns:
-	Successfully added match with identifier: m017 Sat Jun 16 00:00:00 IDT 2012 to jEuroTournament
+	Failed to add new match m017 to jEuroTournament
 addMatch returns:
-	Successfully added match with identifier: m018 Sat Jun 16 00:00:00 IDT 2012 to jEuroTournament
+	Failed to add new match m018 to jEuroTournament
 addMatch returns:
-	Successfully added match with identifier: m019 Sun Jun 17 00:00:00 IDT 2012 to jEuroTournament
+	Failed to add new match m019 to jEuroTournament
 addMatch returns:
-	Successfully added match with identifier: m020 Sun Jun 17 00:00:00 IDT 2012 to jEuroTournament
+	Failed to add new match m020 to jEuroTournament
 addMatch returns:
-	Successfully added match with identifier: m021 Mon Jun 18 00:00:00 IDT 2012 to jEuroTournament
+	Failed to add new match m021 to jEuroTournament
 addMatch returns:
-	Successfully added match with identifier: m022 Mon Jun 18 00:00:00 IDT 2012 to jEuroTournament
+	Failed to add new match m022 to jEuroTournament
 addMatch returns:
-	Successfully added match with identifier: m023 Tue Jun 19 00:00:00 IDT 2012 to jEuroTournament
+	Failed to add new match m023 to jEuroTournament
 addMatch returns:
-	Successfully added match with identifier: m024 Tue Jun 19 00:00:00 IDT 2012 to jEuroTournament
+	Failed to add new match m024 to jEuroTournament
 addMatch returns:
-	Successfully added match with identifier: m025 Thu Jun 21 00:00:00 IDT 2012 to jEuroTournament
+	Failed to add new match m025 to jEuroTournament
 addMatch returns:
-	Successfully added match with identifier: m026 Fri Jun 22 00:00:00 IDT 2012 to jEuroTournament
+	Failed to add new match m026 to jEuroTournament
 addMatch returns:
-	Successfully added match with identifier: m027 Sat Jun 23 00:00:00 IDT 2012 to jEuroTournament
+	Failed to add new match m027 to jEuroTournament
 addMatch returns:
-	Successfully added match with identifier: m028 Sun Jun 24 00:00:00 IDT 2012 to jEuroTournament
+	Failed to add new match m028 to jEuroTournament
 addMatch returns:
-	Successfully added match with identifier: m029 Wed Jun 27 00:00:00 IDT 2012 to jEuroTournament
+	Failed to add new match m029 to jEuroTournament
 addMatch returns:
-	Successfully added match with identifier: m030 Thu Jun 28 00:00:00 IDT 2012 to jEuroTournament
+	Failed to add new match m030 to jEuroTournament
 addMatch returns:
-	Successfully added match with identifier: m031 Sun Jul 01 00:00:00 IDT 2012 to jEuroTournament
+	Failed to add new match m031 to jEuroTournament
 addPlayer returns:
 	Successfully added Player pHR01 , 1 to jEuroTournament
 addPlayer returns:
@@ -121,21 +121,21 @@ addPlayer returns:
 addPlayer returns:
 	Successfully added Player pHR11 , 22 to jEuroTournament
 addPlayer returns:
-	Successfully added Player pCZ01 , 1 to jEuroTournament
+	Failed adding Player pCZ01 , 1 to jEuroTournament
 addPlayer returns:
 	Successfully added Player pCZ02 , 16 to jEuroTournament
 addPlayer returns:
-	Successfully added Player pCZ03 , 3 to jEuroTournament
+	Failed adding Player pCZ03 , 3 to jEuroTournament
 addPlayer returns:
-	Successfully added Player pCZ04 , 22 to jEuroTournament
+	Failed adding Player pCZ04 , 22 to jEuroTournament
 addPlayer returns:
 	Successfully added Player pCZ05 , 5 to jEuroTournament
 addPlayer returns:
-	Successfully added Player pCZ06 , 6 to jEuroTournament
+	Failed adding Player pCZ06 , 6 to jEuroTournament
 addPlayer returns:
-	Successfully added Player pCZ07 , 14 to jEuroTournament
+	Failed adding Player pCZ07 , 14 to jEuroTournament
 addPlayer returns:
-	Successfully added Player pCZ08 , 17 to jEuroTournament
+	Failed adding Player pCZ08 , 17 to jEuroTournament
 addPlayer returns:
 	Successfully added Player pCZ09 , 7 to jEuroTournament
 addPlayer returns:
@@ -143,46 +143,46 @@ addPlayer returns:
 addPlayer returns:
 	Successfully added Player pCZ11 , 20 to jEuroTournament
 addPlayer returns:
-	Successfully added Player pUK01 , 1 to jEuroTournament
+	Failed adding Player pUK01 , 1 to jEuroTournament
 addPlayer returns:
-	Successfully added Player pUK02 , 2 to jEuroTournament
+	Failed adding Player pUK02 , 2 to jEuroTournament
 addPlayer returns:
-	Successfully added Player pUK03 , 3 to jEuroTournament
+	Failed adding Player pUK03 , 3 to jEuroTournament
 addPlayer returns:
-	Successfully added Player pUK04 , 20 to jEuroTournament
+	Failed adding Player pUK04 , 20 to jEuroTournament
 addPlayer returns:
 	Successfully added Player pUK05 , 21 to jEuroTournament
 addPlayer returns:
-	Successfully added Player pUK06 , 4 to jEuroTournament
+	Failed adding Player pUK06 , 4 to jEuroTournament
 addPlayer returns:
-	Successfully added Player pUK07 , 6 to jEuroTournament
+	Failed adding Player pUK07 , 6 to jEuroTournament
 addPlayer returns:
 	Successfully added Player pUK08 , 11 to jEuroTournament
 addPlayer returns:
-	Successfully added Player pUK09 , 10 to jEuroTournament
+	Failed adding Player pUK09 , 10 to jEuroTournament
 addPlayer returns:
-	Successfully added Player pUK10 , 7 to jEuroTournament
+	Failed adding Player pUK10 , 7 to jEuroTournament
 addPlayer returns:
-	Successfully added Player pUK11 , 22 to jEuroTournament
+	Failed adding Player pUK11 , 22 to jEuroTournament
 addPlayer returns:
-	Successfully added Player pPO01 , 1 to jEuroTournament
+	Failed adding Player pPO01 , 1 to jEuroTournament
 addPlayer returns:
-	Successfully added Player pPO02 , 2 to jEuroTournament
+	Failed adding Player pPO02 , 2 to jEuroTournament
 addPlayer returns:
-	Successfully added Player pPO03 , 3 to jEuroTournament
+	Failed adding Player pPO03 , 3 to jEuroTournament
 addPlayer returns:
-	Successfully added Player pPO04 , 4 to jEuroTournament
+	Failed adding Player pPO04 , 4 to jEuroTournament
 addPlayer returns:
-	Successfully added Player pPO05 , 15 to jEuroTournament
+	Failed adding Player pPO05 , 15 to jEuroTournament
 addPlayer returns:
-	Successfully added Player pPO06 , 7 to jEuroTournament
+	Failed adding Player pPO06 , 7 to jEuroTournament
 addPlayer returns:
-	Successfully added Player pPO07 , 10 to jEuroTournament
+	Failed adding Player pPO07 , 10 to jEuroTournament
 addPlayer returns:
-	Successfully added Player pPO08 , 11 to jEuroTournament
+	Failed adding Player pPO08 , 11 to jEuroTournament
 addPlayer returns:
 	Successfully added Player pPO09 , 23 to jEuroTournament
 addPlayer returns: invalid input pId , pPO10
 addPlayer returns: invalid input pId , pPO11
 addPlayer returns:
-	Successfully added Player pFR01 , 1 to jEuroTournament
+	Failed adding Player pFR01 , 1 to jEuroTournament

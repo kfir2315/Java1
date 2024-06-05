@@ -14,6 +14,7 @@ import core.Fund;
 import core.MatchResult;
 import core.Player;
 import core.Sponsor;
+import core.Stadium;
 import core.Team;
 import utils.Country;
 import utils.MyFileLogWriter;
@@ -121,7 +122,7 @@ public class MainClass {
 
                 String matchID = tokens[1];
                 Date date = null;
-                String stadium = tokens[3];
+                Stadium stadium = null;
                 int soldTickets = 0;
 
                 try {

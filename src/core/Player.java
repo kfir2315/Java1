@@ -5,24 +5,24 @@ import java.util.Arrays;
 import utils.Country;
 import utils.Role;
 
-public class Player extends Person implements Comparable<Player>{
+public class Player extends Person implements Comparable<Player> {
     private int pNum;
     private Role[] skills;
     private int fansCount;
     private int pUECount;
-    
-    
-    public Player(String pId, String pFullName, int age, Country nation, int pNum, Role skill, int fansCount) {
-        super(pId, pFullName, age, nation);
+
+    public Player(String pId, String pFullName, short age, String nation, int pNum, int fansCount, Role[] skills, int euroParticipationCount) {
+        super(pId, pFullName, age, Country.valueOf(nation.toUpperCase())); // Assuming nation is passed as a string representing a Country enum value
         this.pNum = pNum;
         this.skills = skills;
         this.fansCount = fansCount;
+        this.pUECount = euroParticipationCount;
     }
 
     public Player() {
-        this("kfir", "maziar", 39, Country.CROATIA, 23,  Role.DE, 2000);
+        this("kfir", "maziar", (short) 39, "CROATIA", 23, 2000, new Role[] {Role.DE}, 0);
     }
-        
+
     public int getpNum() {
         return pNum;
     }
@@ -34,7 +34,7 @@ public class Player extends Person implements Comparable<Player>{
     public Role[] getSkills() {
         return skills;
     }
-    
+
     public void setSkills(Role[] skills) {
         this.skills = skills;
     }
@@ -47,29 +47,29 @@ public class Player extends Person implements Comparable<Player>{
         this.fansCount = fansCount;
     }
 
-    public int getpUECount(int pUECount){
+    public int getpUECount() {
         return pUECount;
     }
 
-    public void setpUECount(int pUECount){
+    public void setpUECount(int pUECount) {
         this.pUECount = pUECount;
     }
-    
+
     @Override
     public String toString() {
-    	return super.toString() + "Player{" + "pNum=" + pNum +
+        return super.toString() + "Player{" + "pNum=" + pNum +
                 ", pUECount=" + pUECount +
                 ", skills=" + Arrays.toString(skills) +
                 ", fansCount=" + fansCount +
                 '}';
     }
-    
+
     @Override
     public int compareTo(Player other) {
         // Implement sorting by pId in ascending order
         return this.getpId().compareTo(other.getpId());
     }
-   
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -84,17 +84,15 @@ public class Player extends Person implements Comparable<Player>{
     public int hashCode() {
         return pNum;
     }
-    
+
     // Check how many times the player has participated in the Euro
     public int euroParticipationCount() {
-       
         return this.getpUECount();
     }
-    
+
     // Check if the player is participating for the first time
     @Override
     public boolean firstTimeParticipant() {
-        
         return this.getpUECount() > 1;
     }
 
@@ -106,6 +104,4 @@ public class Player extends Person implements Comparable<Player>{
             throw new IllegalArgumentException("New participation count must be greater than the current count.");
         }
     }
-    
-    
 }

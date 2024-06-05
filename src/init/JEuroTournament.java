@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-
 import core.Fund;
 import core.Match;
 import core.MatchResult;
@@ -20,8 +19,9 @@ import utils.Role;
 
 /**
  * This JEuroTournament object represents the class system
- * @author Java Course Team 2012
- * @author University Of Haifa-Israel 
+ * 
+ * Author: Java Course Team 2012
+ * Author: University Of Haifa-Israel
  */
 public class JEuroTournament {
     // ---------------------the class parameters -------------------------
@@ -34,6 +34,7 @@ public class JEuroTournament {
      * All Matches listed in the system
      */
     private ArrayList<Match> matches;
+
     /**
      * all players sponsors
      */
@@ -41,8 +42,7 @@ public class JEuroTournament {
 
     // --------------------- Constructors -------------------------
     /**
-     * Constructor
-     * Perform initialization for related data structures
+     * Constructor Perform initialization for related data structures
      */
     public JEuroTournament() {
         super();
@@ -75,8 +75,9 @@ public class JEuroTournament {
     }
 
     /**
-     * the method creates and add new team to the system
-     * IFF the team does not exist.
+     * the method creates and add new team to the system IFF the team does not
+     * exist.
+     * 
      * @param tNumber
      * @param tName
      * @param represents
@@ -86,8 +87,7 @@ public class JEuroTournament {
      */
     public boolean addTeam(Country represents, String tName, String tNumber, int fansCount) {
         Team teamToAdd = new Team(tNumber);
-        if (tNumber != null && tName != null
-                && represents != null) {
+        if (tNumber != null && tName != null && represents != null) {
             // checking if the team exist
             if (!teams.contains(teamToAdd)) {
                 teamToAdd = new Team(represents, tName, tNumber, fansCount);
@@ -100,15 +100,14 @@ public class JEuroTournament {
 
     /**
      * adds a match to the system IFF it does not exist
+     * 
      * @param matchID
      * @param date
      * @param stadium
      * @return true if managed to add the match
      */
     public boolean addMatch(String matchID, Date date, Stadium stadium, int totalTickets) {
-
-        if (matchID != null && date != null
-                && stadium != null) {
+        if (matchID != null && date != null && stadium != null) {
             Match matchToAdd = new Match(matchID, date, stadium, totalTickets);
             if (matches.contains(matchToAdd)) {
                 return false;
@@ -121,25 +120,40 @@ public class JEuroTournament {
     } // ~ END OF addMatch
 
     /**
-     * receive a person and without knowing its exact type
-     * the method adds the Person to the system data base 
-     * If the person does not exist 
-     * @param person
-     * @return true if successfully added
+     * Adds a player to the system IFF the player does not exist
+     * 
+     * @param player The player to add
+     * @return true if managed to add the player
      */
     public boolean addPlayer(Player player) {
-        if (!players.contains(player)) {
-            addPlayer(player);
+        if (player != null && !players.contains(player)) {
             return players.add(player);
         }
         return false;
     }
 
-    // ===================== Queries =================================== 
+    /**
+     * receive a person and without knowing its exact type the method adds the
+     * Person to the system data base If the person does not exist
+     * 
+     * @param person
+     * @return true if successfully added
+     */
+    public boolean addPerson(Person person) {
+        // Implementation for adding a person (Player, Sponsor, etc.) to the system
+        // Example implementation (you may need to adjust based on actual requirements):
+        if (person instanceof Player) {
+            return addPlayer((Player) person);
+        }
+        // Handle other types of Person (e.g., Sponsor) here
+        return false;
+    }
+
+    // ===================== Queries ===================================
 
     /**
-     * this public method is used to save object of player in .ser file  
-     * this method needs to run on the ArrayList and save all the Players objects
+     * this public method is used to save object of player in .ser file this method
+     * needs to run on the ArrayList and save all the Players objects
      */
     public void savePlayerToFile() {
         try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("player.dat"))) {
@@ -150,29 +164,27 @@ public class JEuroTournament {
     }
 
     /**
-     * this public method is used to read objects of Players from .ser file  
+     * this public method is used to read objects of Players from .ser file
      */
     @SuppressWarnings("unchecked")
     public void loadPlayersFromFile() {
-
         try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream("player.dat"))) {
             players = (ArrayList<Player>) ois.readObject();
         } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
         }
-     
     }
 
     /**
      * this method returns all the Player that are above a certain age
+     * 
      * @param players list of players to filter
-     * @param age the age to filter by
+     * @param age     the age to filter by
      * @return list of players above the specified age
      */
     public static List<Player> getPlayersAboveAge(List<Player> players, int age) {
-      
         List<Player> result = new ArrayList<>();
-        
+
         for (Player player : players) {
             if (player.getAge() > age && player.euroParticipationCount() == 0) {
                 result.add(player);
@@ -180,6 +192,4 @@ public class JEuroTournament {
         }
         return result;
     }
-
-
 }
