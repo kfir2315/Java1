@@ -1,6 +1,7 @@
 package core;
 
 import java.util.Date;
+import java.util.Objects;
 
 public class Match implements Comparable<Match> {
 
@@ -69,6 +70,20 @@ public class Match implements Comparable<Match> {
        
         return this.getMDate().compareTo(other.getMDate());
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        Match other = (Match) obj;
+        return Objects.equals(mId, other.mId);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(mId);
+    }
+
 
 
     
