@@ -85,12 +85,14 @@ public class JEuroTournament {
      * @param finalStage
      * @return if manage to add
      */
-    public boolean addTeam(Country represents, String tName, String tNumber, int fansCount) {
-        Team teamToAdd = new Team(tNumber);
-        if (tNumber != null && tName != null && represents != null) {
+    public boolean addTeam(String tId, String tName, String represents,
+                           int fansCount) {
+        Team teamToAdd = new Team(tId);
+        if (tId != null && tName != null
+                && represents != null) {
             // checking if the team exist
             if (!teams.contains(teamToAdd)) {
-                teamToAdd = new Team(represents, tName, tNumber, fansCount);
+                teamToAdd = new Team(tId, tName, represents, fansCount);
                 teams.add(teamToAdd);
                 return true;
             }
@@ -106,7 +108,7 @@ public class JEuroTournament {
      * @param stadium
      * @return true if managed to add the match
      */
-    public boolean addMatch(String matchID, Date date, Stadium stadium, int totalTickets) {
+    public boolean addMatch(String matchID, Date date, String stadium, long totalTickets) {
         if (matchID != null && date != null && stadium != null) {
             Match matchToAdd = new Match(matchID, date, stadium, totalTickets);
             if (matches.contains(matchToAdd)) {
@@ -118,6 +120,8 @@ public class JEuroTournament {
         }
         return false;
     } // ~ END OF addMatch
+        
+        
 
     /**
      * Adds a player to the system IFF the player does not exist
@@ -186,7 +190,7 @@ public class JEuroTournament {
         List<Player> result = new ArrayList<>();
 
         for (Player player : players) {
-            if (player.getAge() > age && player.euroParticipationCount() == 0) {
+            if (player.getAge() > age) {
                 result.add(player);
             }
         }

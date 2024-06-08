@@ -17,7 +17,7 @@ public enum Stadium {
 	private final Country country; 
 	private final String city;
 	
-	private Stadium(int capacity, Country country,String city) {
+	private Stadium(int capacity, Country country, String city) {
 		this.capacity=capacity;
 		this.country=country;
 		this.city=city;

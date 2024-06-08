@@ -18,16 +18,16 @@ public class Team {
     private ArrayList<Player> players;
     private int fansCount;
 
-    public Team(String tNumber, String tName, Country represents) {
+    public Team(String tNumber, String tName, String represents, int fansCount) {
         this.tNumber = tNumber;
         this.tName = tName;
-        this.represents = represents;
+        this.represents = Country.getCountryByName(represents);
         this.goalsScored = 0;
         this.goalsAgainst = 0;
         this.yellowCards = 0;
         this.redCards = 0;
         this.players = new ArrayList<>();
-        this.fansCount = 0;
+        this.fansCount = fansCount;
     }
 
 	public Team(String tNumber) {

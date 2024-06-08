@@ -1,8 +1,10 @@
 package core;
 
+import java.io.Serializable;
+
 import utils.Country;
 
-public abstract class Person {
+public abstract class Person implements Serializable {
 	
 	protected String pId;
     protected String pFullName;

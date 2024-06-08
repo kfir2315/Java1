@@ -23,6 +23,13 @@ public class Player extends Person implements Comparable<Player> {
         this("kfir", "maziar", (short) 39, "CROATIA", 23, 2000, new Role[] {Role.DE}, 0);
     }
 
+    public Player(String pId, String pFullName, short age, String nation, int pNum, Role[] skills, int fansCount){
+        super(pId, pFullName, age, Country.valueOf(nation.toUpperCase())); // Assuming nation is passed as a string representing a Country enum value
+        this.pNum = pNum;
+        this.skills = skills;
+        this.fansCount = fansCount;
+    }
+
     public int getpNum() {
         return pNum;
     }

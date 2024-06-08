@@ -11,10 +11,10 @@ public class Match implements Comparable<Match> {
     private MatchResult result;
     private long totalTickets;
 
-    public Match(String mId, Date mDate, Stadium tookPlace, long totalTickets) {
+    public Match(String mId, Date mDate, String tookPlace, long totalTickets) {
         this.mId = mId;
         this.mDate = new Date(mDate.getTime());
-        this.tookPlace = tookPlace;
+        setTookPlace(tookPlace);
         this.totalTickets = totalTickets;
     }
     
