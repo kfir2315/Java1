@@ -86,7 +86,7 @@ public class JEuroTournament {
      * @return if manage to add
      */
     public boolean addTeam(String tId, String tName, String represents,
-                           int fansCount) {
+            int fansCount) {
         Team teamToAdd = new Team(tId);
         if (tId != null && tName != null
                 && represents != null) {
@@ -120,8 +120,6 @@ public class JEuroTournament {
         }
         return false;
     } // ~ END OF addMatch
-        
-        
 
     /**
      * Adds a player to the system IFF the player does not exist

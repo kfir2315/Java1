@@ -6,9 +6,13 @@ import java.util.Objects;
 
 import utils.Country;
 
+/**
+ * Represents a team in the system.
+ */
 public class Team {
-	
-	private String tNumber;
+
+    // Fields representing team properties
+    private String tNumber;
     private String tName;
     private Country represents;
     private short goalsScored;
@@ -18,6 +22,14 @@ public class Team {
     private ArrayList<Player> players;
     private int fansCount;
 
+    /**
+     * Constructs a team with the specified parameters.
+     *
+     * @param tNumber    The team number.
+     * @param tName      The team name.
+     * @param represents The country the team represents.
+     * @param fansCount  The number of fans of the team.
+     */
     public Team(String tNumber, String tName, String represents, int fansCount) {
         this.tNumber = tNumber;
         this.tName = tName;
@@ -30,110 +42,227 @@ public class Team {
         this.fansCount = fansCount;
     }
 
-	public Team(String tNumber) {
-		this.tNumber=tNumber;
+    /**
+     * Constructs a team with the specified team number.
+     *
+     * @param tNumber The team number.
+     */
+    public Team(String tNumber) {
+        this.tNumber = tNumber;
     }
 
-	public Team(Country represents, String tName, String tNumber, int fansCount) {
+    /**
+     * Constructs a team with the specified parameters.
+     *
+     * @param represents The country the team represents.
+     * @param tName      The team name.
+     * @param tNumber    The team number.
+     * @param fansCount  The number of fans of the team.
+     */
+    public Team(Country represents, String tName, String tNumber, int fansCount) {
         this.represents = represents;
-		this.tName = tName;
-		this.tNumber = tNumber;
-		this.fansCount = fansCount;
+        this.tName = tName;
+        this.tNumber = tNumber;
+        this.fansCount = fansCount;
     }
 
-	public String gettNumber() {
-		return tNumber;
-	}
+    // Getters and setters for team properties
 
-	public void settNumber(String tNumber) {
-		this.tNumber = tNumber;
-	}
+    /**
+     * Retrieves the team number.
+     *
+     * @return The team number.
+     */
+    public String gettNumber() {
+        return tNumber;
+    }
 
-	public String gettName() {
-		return tName;
-	}
+    /**
+     * Sets the team number.
+     *
+     * @param tNumber The team number.
+     */
+    public void settNumber(String tNumber) {
+        this.tNumber = tNumber;
+    }
 
-	public void settName(String tName) {
-		this.tName = tName;
-	}
+    /**
+     * Retrieves the team name.
+     *
+     * @return The team name.
+     */
+    public String gettName() {
+        return tName;
+    }
 
-	public Country getRepresents() {
-		return represents;
-	}
+    /**
+     * Sets the team name.
+     *
+     * @param tName The team name.
+     */
+    public void settName(String tName) {
+        this.tName = tName;
+    }
 
-	public void setRepresents(String countryName) {
+    /**
+     * Retrieves the country the team represents.
+     *
+     * @return The country the team represents.
+     */
+    public Country getRepresents() {
+        return represents;
+    }
+
+    /**
+     * Sets the country the team represents.
+     *
+     * @param countryName The name of the country.
+     */
+    public void setRepresents(String countryName) {
         this.represents = Country.getCountryByName(countryName);
     }
 
-	public short getGoalsScored() {
-		return goalsScored;
-	}
+    /**
+     * Retrieves the number of goals scored by the team.
+     *
+     * @return The number of goals scored by the team.
+     */
+    public short getGoalsScored() {
+        return goalsScored;
+    }
 
-	public void setGoalsScored(short goalsScored) {
-		this.goalsScored = goalsScored;
-	}
+    /**
+     * Sets the number of goals scored by the team.
+     *
+     * @param goalsScored The number of goals scored by the team.
+     */
+    public void setGoalsScored(short goalsScored) {
+        this.goalsScored = goalsScored;
+    }
 
-	public short getGoalsAgainst() {
-		return goalsAgainst;
-	}
+    /**
+     * Retrieves the number of goals conceded by the team.
+     *
+     * @return The number of goals conceded by the team.
+     */
+    public short getGoalsAgainst() {
+        return goalsAgainst;
+    }
 
-	public void setGoalsAgainst(short goalsAgainst) {
-		this.goalsAgainst = goalsAgainst;
-	}
+    /**
+     * Sets the number of goals conceded by the team.
+     *
+     * @param goalsAgainst The number of goals conceded by the team.
+     */
+    public void setGoalsAgainst(short goalsAgainst) {
+        this.goalsAgainst = goalsAgainst;
+    }
 
-	public short getYellowCards() {
-		return yellowCards;
-	}
+    /**
+     * Retrieves the number of yellow cards received by the team.
+     *
+     * @return The number of yellow cards received by the team.
+     */
+    public short getYellowCards() {
+        return yellowCards;
+    }
 
-	public void setYellowCards(short yellowCards) {
-		this.yellowCards = yellowCards;
-	}
+    /**
+     * Sets the number of yellow cards received by the team.
+     *
+     * @param yellowCards The number of yellow cards received by the team.
+     */
+    public void setYellowCards(short yellowCards) {
+        this.yellowCards = yellowCards;
+    }
 
-	public short getRedCards() {
-		return redCards;
-	}
+    /**
+     * Retrieves the number of red cards received by the team.
+     *
+     * @return The number of red cards received by the team.
+     */
+    public short getRedCards() {
+        return redCards;
+    }
 
-	public void setRedCards(short redCards) {
-		this.redCards = redCards;
-	}
+    /**
+     * Sets the number of red cards received by the team.
+     *
+     * @param redCards The number of red cards received by the team.
+     */
+    public void setRedCards(short redCards) {
+        this.redCards = redCards;
+    }
 
-	public List<Player> getPlayers() {
-		return players;
-	}
+    /**
+     * Retrieves the list of players in the team.
+     *
+     * @return The list of players in the team.
+     */
+    public List<Player> getPlayers() {
+        return players;
+    }
 
-	public void setPlayers(ArrayList<Player> players) {
-		this.players = players;
-	}
+    /**
+     * Sets the list of players in the team.
+     *
+     * @param players The list of players in the team.
+     */
+    public void setPlayers(ArrayList<Player> players) {
+        this.players = players;
+    }
 
-	public int getFansCount() {
-		return fansCount;
-	}
+    /**
+     * Retrieves the number of fans of the team.
+     *
+     * @return The number of fans of the team.
+     */
+    public int getFansCount() {
+        return fansCount;
+    }
 
-	public void setFansCount(int fansCount) {
-		this.fansCount = fansCount;
-	}
+    /**
+     * Sets the number of fans of the team.
+     *
+     * @param fansCount The number of fans of the team.
+     */
+    public void setFansCount(int fansCount) {
+        this.fansCount = fansCount;
+    }
 
-	@Override
-	public String toString() {
-		return "Team [tNumber=" + tNumber + ", tName=" + tName + ", represents=" + represents + ", goalsScored="
-				+ goalsScored + ", goalsAgainst=" + goalsAgainst + ", yellowCards=" + yellowCards + ", redCards="
-				+ redCards + ", players=" + players + ", fansCount=" + fansCount + "]";
-	}
-    
-	public void addPlayer(Player player) {
+    /**
+     * Adds a player to the team.
+     *
+     * @param player The player to add to the team.
+     */
+    public void addPlayer(Player player) {
         players.add(player);
     }
 
+    /**
+     * Removes a player from the team.
+     *
+     * @param player The player to remove from the team.
+     * @throws PlayerNotFoundE If the player is not found in the team.
+     */
     public void removePlayer(Player player) throws PlayerNotFoundE {
         if (!players.remove(player)) {
             throw new PlayerNotFoundE("Player not found: " + player.getpId());
         }
     }
-	
-	@Override
+
+    /**
+     * Checks if this team is equal to another object.
+     *
+     * @param o The object to compare.
+     * @return True if the objects are equal, false otherwise.
+     */
+    @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o)
+            return true;
+        if (o == null || getClass() != o.getClass())
+            return false;
         Team team = (Team) o;
         return Objects.equals(tNumber, team.tNumber) && Objects.equals(tName, team.tName);
     }
@@ -142,6 +271,5 @@ public class Team {
     public int hashCode() {
         return Objects.hash(tNumber, tName);
     }
-    
 
 }
