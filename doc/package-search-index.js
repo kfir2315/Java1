@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"m":"HW1_forStudents","l":"core"},{"m":"HW1_forStudents","l":"init"},{"m":"HW1_forStudents","l":"utils"}];updateSearchResults();
